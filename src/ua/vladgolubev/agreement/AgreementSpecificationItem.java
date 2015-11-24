@@ -8,7 +8,7 @@ public class AgreementSpecificationItem {
     private UnitOfMeasurement unitOfMeasurement;
     private LocalDateTime date;
 
-    public AgreementSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
+    AgreementSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
         this.name = name;
         this.amount = amount;
         this.unitOfMeasurement = unitOfMeasurement;
@@ -29,5 +29,15 @@ public class AgreementSpecificationItem {
 
     public LocalDateTime getDate() {
         return date;
+    }
+
+    @Override
+    public String toString() {
+        return "AgreementSpecificationItem{" +
+                "name='" + name + '\'' +
+                ", amount=" + amount +
+                ", unitOfMeasurement=" + unitOfMeasurement +
+                ", date=" + date +
+                '}';
     }
 }

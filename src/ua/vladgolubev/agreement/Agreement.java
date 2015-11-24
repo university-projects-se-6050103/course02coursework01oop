@@ -15,6 +15,7 @@ public class Agreement {
         this.organization = organization;
         this.number = new Random().nextInt(10000);
         this.date = LocalDateTime.now();
+        this.specification = new AgreementSpecification();
     }
 
     public String getTitle() {
@@ -37,8 +38,8 @@ public class Agreement {
         return specification;
     }
 
-    public void setSpecification(AgreementSpecification specification) {
-        this.specification = specification;
+    public void addSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
+        this.specification.addSpecification(new AgreementSpecificationItem(name, amount, unitOfMeasurement));
     }
 
     @Override

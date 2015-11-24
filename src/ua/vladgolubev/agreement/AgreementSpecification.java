@@ -6,7 +6,14 @@ import java.util.List;
 public class AgreementSpecification {
     private List<AgreementSpecificationItem> items = new ArrayList<AgreementSpecificationItem>();
 
-    public void addSpecification(AgreementSpecificationItem item) {
+    void addSpecification(AgreementSpecificationItem item) {
         items.add(item);
+    }
+
+    @Override
+    public String toString() {
+        return "AgreementSpecification{" +
+                "items=" + items +
+                '}';
     }
 }

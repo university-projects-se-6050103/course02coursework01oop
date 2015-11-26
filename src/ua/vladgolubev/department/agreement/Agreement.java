@@ -1,4 +1,4 @@
-package ua.vladgolubev.agreement;
+package ua.vladgolubev.department.agreement;
 
 import java.time.LocalDateTime;
 import java.util.Random;

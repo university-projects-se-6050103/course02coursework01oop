@@ -1,6 +1,6 @@
 package ua.vladgolubev.department.delivery;
 
-import ua.vladgolubev.agreement.Agreement;
+import ua.vladgolubev.department.agreement.Agreement;
 
 import java.time.LocalDateTime;
 
@@ -8,16 +8,8 @@ public class Delivery {
     private String destinationLocation;
     private Agreement agreement;
     private LocalDateTime estimatedDate;
-    private boolean isExpired;
 
-    public Delivery(String destinationLocation, LocalDateTime estimatedDate) {
-        this.destinationLocation = destinationLocation;
-        this.estimatedDate = estimatedDate;
-    }
-
-    public void setAgreement(Agreement agreement) {
-        this.agreement = agreement;
-    }
+    private Delivery() { }
 
     public String getDestinationLocation() {
         return destinationLocation;
@@ -31,17 +23,35 @@ public class Delivery {
         return estimatedDate;
     }
 
-    public boolean isExpired() {
-        return isExpired;
-    }
-
     @Override
     public String toString() {
         return "Delivery{" +
                 "destinationLocation='" + destinationLocation + '\'' +
                 ", agreement=" + agreement +
                 ", estimatedDate=" + estimatedDate +
-                ", isExpired=" + isExpired +
                 '}';
+    }
+
+    public static Builder newBuilder() {
+        return new Delivery().new Builder();
+    }
+
+    public class Builder {
+        private Builder() {
+        }
+
+        public Builder setDestinationLocation(String destinationLocation) {
+            Delivery.this.destinationLocation = destinationLocation;
+            return this;
+        }
+
+        public Builder setAgreement(Agreement agreement) {
+            Delivery.this.agreement = agreement;
+            return this;
+        }
+
+        public Delivery build() {
+            return Delivery.this;
+        }
     }
 }

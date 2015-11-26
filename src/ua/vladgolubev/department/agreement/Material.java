@@ -1,4 +1,4 @@
-package ua.vladgolubev.agreement;
+package ua.vladgolubev.department.agreement;
 
 public class Material {
     private final String name;

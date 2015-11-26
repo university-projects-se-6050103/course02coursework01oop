@@ -1,4 +1,4 @@
-package ua.vladgolubev.agreement;
+package ua.vladgolubev.department.agreement;
 
 public class Organization {
     private final String name;

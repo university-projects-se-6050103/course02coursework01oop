@@ -1,7 +1,7 @@
 package ua.vladgolubev.department;
 
-import ua.vladgolubev.agreement.Agreement;
-import ua.vladgolubev.agreement.Organization;
+import ua.vladgolubev.department.agreement.Agreement;
+import ua.vladgolubev.department.agreement.Organization;
 import ua.vladgolubev.department.delivery.Delivery;
 
 import java.util.List;
@@ -14,8 +14,21 @@ public class ContractDepartment {
     private ContractDepartment() {
     }
 
+    public Agreement.Builder defineAgreement() {
+        return Agreement.newBuilder();
+    }
+
+    public Delivery.Builder defineDelivery() {
+        return Delivery.newBuilder();
+    }
+
     public void signAgreement(Agreement agreement) {
         agreements.add(agreement);
+        organizations.add(agreement.getOrganization());
+    }
+
+    public void scheduleDelivery(Delivery delivery) {
+        deliveries.add(delivery);
     }
 
     // Singleton class holder
@@ -25,5 +38,14 @@ public class ContractDepartment {
 
     public static ContractDepartment getInstance() {
         return ContractDepartmentHolder.HOLDER_INSTANCE;
+    }
+
+    @Override
+    public String toString() {
+        return "ContractDepartment{" +
+                "agreements=" + agreements +
+                ", deliveries=" + deliveries +
+                ", organizations=" + organizations +
+                '}';
     }
 }

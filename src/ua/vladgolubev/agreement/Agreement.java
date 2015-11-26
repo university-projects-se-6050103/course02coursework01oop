@@ -60,8 +60,8 @@ public class Agreement {
             return this;
         }
 
-        public Builder setOrganization(Organization organization) {
-            Agreement.this.organization = organization;
+        public Builder addOrganization(String organizationName) {
+            Agreement.this.organization = new Organization(organizationName);
             return this;
         }
 

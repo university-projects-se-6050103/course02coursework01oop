@@ -27,7 +27,6 @@ public class Delivery {
     public String toString() {
         return "Delivery{" +
                 "destinationLocation='" + destinationLocation + '\'' +
-                ", agreement=" + agreement +
                 ", estimatedDate=" + estimatedDate +
                 '}';
     }

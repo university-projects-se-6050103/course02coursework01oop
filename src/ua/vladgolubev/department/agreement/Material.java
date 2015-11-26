@@ -1,6 +1,8 @@
 package ua.vladgolubev.department.agreement;
 
-public class Material {
+import java.io.Serializable;
+
+public class Material implements Serializable {
     private final String name;
 
     public Material(String name) {

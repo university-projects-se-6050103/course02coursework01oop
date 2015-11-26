@@ -1,4 +1,6 @@
 package ua.vladgolubev.department;
 
-public class SpecificationsAnalysis {
+import java.io.Serializable;
+
+public class SpecificationsAnalysis implements Serializable {
 }

@@ -1,5 +1,7 @@
 package ua.vladgolubev.department.agreement;
 
-public enum UnitOfMeasurement {
-    KG, TON, M;
+import java.io.Serializable;
+
+public enum UnitOfMeasurement implements Serializable {
+    KG, TON, M
 }

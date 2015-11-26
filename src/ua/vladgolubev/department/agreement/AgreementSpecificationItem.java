@@ -1,8 +1,9 @@
 package ua.vladgolubev.department.agreement;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class AgreementSpecificationItem {
+public class AgreementSpecificationItem implements Serializable {
     private String name;
     private double amount;
     private UnitOfMeasurement unitOfMeasurement;

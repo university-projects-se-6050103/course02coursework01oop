@@ -2,9 +2,10 @@ package ua.vladgolubev.department.delivery;
 
 import ua.vladgolubev.department.agreement.Agreement;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Delivery {
+public class Delivery implements Serializable {
     private String destinationLocation;
     private Agreement agreement;
     private LocalDateTime estimatedDate;

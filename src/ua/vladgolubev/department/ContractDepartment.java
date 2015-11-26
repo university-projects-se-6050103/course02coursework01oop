@@ -4,10 +4,11 @@ import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.Organization;
 import ua.vladgolubev.department.delivery.Delivery;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContractDepartment {
+public class ContractDepartment implements Serializable {
     private List<Agreement> agreements;
     private List<Delivery> deliveries;
     private List<Organization> organizations;

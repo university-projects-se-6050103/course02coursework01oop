@@ -1,4 +1,6 @@
 package ua.vladgolubev.department.delivery;
 
-public class DeliveryPlan {
+import java.io.Serializable;
+
+public class DeliveryPlan implements Serializable {
 }

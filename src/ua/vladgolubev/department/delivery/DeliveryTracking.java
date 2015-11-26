@@ -1,4 +1,6 @@
 package ua.vladgolubev.department.delivery;
 
-public class DeliveryTracking {
+import java.io.Serializable;
+
+public class DeliveryTracking implements Serializable {
 }

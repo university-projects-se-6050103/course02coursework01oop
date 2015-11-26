@@ -10,12 +10,7 @@ public class Agreement {
     private LocalDateTime date;
     private AgreementSpecification specification;
 
-    public Agreement(String title, Organization organization) {
-        this.title = title;
-        this.organization = organization;
-        this.number = new Random().nextInt(10000);
-        this.date = LocalDateTime.now();
-        this.specification = new AgreementSpecification();
+    private Agreement() {
     }
 
     public String getTitle() {
@@ -38,10 +33,6 @@ public class Agreement {
         return specification;
     }
 
-    public void addSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
-        this.specification.addSpecification(new AgreementSpecificationItem(name, amount, unitOfMeasurement));
-    }
-
     @Override
     public String toString() {
         return "Agreement{" +
@@ -51,5 +42,36 @@ public class Agreement {
                 ", date=" + date +
                 ", specification=" + specification +
                 '}';
+    }
+
+    public static Builder newBuilder() {
+        return new Agreement().new Builder();
+    }
+
+    public class Builder {
+        private Builder(){
+            Agreement.this.number = new Random().nextInt(10000);
+            Agreement.this.date = LocalDateTime.now();
+            Agreement.this.specification = new AgreementSpecification();
+        }
+
+        public Builder setTitle(String title) {
+            Agreement.this.title = title;
+            return this;
+        }
+
+        public Builder setOrganization(Organization organization) {
+            Agreement.this.organization = organization;
+            return this;
+        }
+
+        public Builder addSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
+            Agreement.this.specification.addSpecification(new AgreementSpecificationItem(name, amount, unitOfMeasurement));
+            return this;
+        }
+
+        public Agreement build() {
+            return Agreement.this;
+        }
     }
 }

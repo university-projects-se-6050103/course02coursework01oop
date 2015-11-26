@@ -12,7 +12,10 @@ public class ContractDepartment {
     private List<Organization> organizations;
 
     private ContractDepartment() {
+    }
 
+    public void signAgreement(Agreement agreement) {
+        agreements.add(agreement);
     }
 
     // Singleton class holder

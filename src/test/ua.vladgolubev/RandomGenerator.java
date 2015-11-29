@@ -29,9 +29,7 @@ public class RandomGenerator {
             "NetCracker",
             "Luxoft",
             "GlobalLogic",
-            "Ciklum",
-            "DataArt",
-            "Nravo"
+            "Ciklum"
     };
 
 

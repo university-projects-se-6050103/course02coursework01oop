@@ -31,6 +31,11 @@ public class ContractDepartmentTest {
     }
 
     @Test
+    public void testAgreementsGenerated() throws Exception {
+        assertTrue(ContractDepartment.getInstance().getAgreements().size() == numberOfAgreements);
+    }
+
+    @Test  // To delete
     public void toStringShouldPrint() {
         for (Agreement agreement : ContractDepartment.getInstance().getAgreements()) {
             System.out.println(agreement.getOrganization());

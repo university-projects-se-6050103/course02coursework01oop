@@ -4,7 +4,6 @@ import ua.vladgolubev.department.ContractDepartment;
 import ua.vladgolubev.department.ContractDepartmentSerializer;
 import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.UnitOfMeasurement;
-import ua.vladgolubev.department.delivery.Delivery;
 
 public class Main {
 

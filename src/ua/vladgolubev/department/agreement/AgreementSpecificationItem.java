@@ -2,7 +2,6 @@ package ua.vladgolubev.department.agreement;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class AgreementSpecificationItem implements Serializable {
     private String name;

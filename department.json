@@ -5,7 +5,7 @@
       "organization": {
         "name": "ТернопільБУД"
       },
-      "number": 3882,
+      "number": 1049,
       "date": {
         "year": 2015,
         "month": 11,
@@ -43,11 +43,6 @@
           "day": 22
         }
       }
-    }
-  ],
-  "organizations": [
-    {
-      "name": "ТернопільБУД"
     }
   ]
 }

@@ -8,11 +8,9 @@ import java.util.List;
 
 public class ContractDepartment {
     private List<Agreement> agreements;
-    private List<Organization> organizations;
 
     private ContractDepartment() {
-        agreements = new ArrayList<Agreement>();
-        organizations = new ArrayList<Organization>();
+        agreements = new ArrayList<>();
     }
 
     public Agreement.Builder defineAgreement() {
@@ -21,7 +19,6 @@ public class ContractDepartment {
 
     public void signAgreement(Agreement agreement) {
         agreements.add(agreement);
-        organizations.add(agreement.getOrganization());
     }
 
     // Singleton class holder
@@ -37,7 +34,6 @@ public class ContractDepartment {
     public String toString() {
         return "ContractDepartment{" +
                 "agreements=" + agreements +
-                ", organizations=" + organizations +
                 '}';
     }
 }

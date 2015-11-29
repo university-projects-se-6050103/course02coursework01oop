@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import ua.vladgolubev.department.ContractDepartment;
 import ua.vladgolubev.department.ContractDepartmentSerializer;
+import ua.vladgolubev.department.SpecificationsAnalysis;
 import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.UnitOfMeasurement;
 import ua.vladgolubev.department.delivery.DeliveryPlan;
@@ -55,9 +56,7 @@ public class ContractDepartmentTest {
 
     @Test  // To delete
     public void toStringShouldPrint() {
-        for (Agreement agreement : ContractDepartment.getInstance().getAgreements()) {
-            System.out.println(agreement.getOrganization());
-        }
+        SpecificationsAnalysis.printMostPopularMaterials();
         assertTrue(ContractDepartment.getInstance().toString().length() > 0);
     }
 

@@ -5,10 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AgreementSpecification implements Serializable {
-    private List<AgreementSpecificationItem> items = new ArrayList<AgreementSpecificationItem>();
+    private List<AgreementSpecificationItem> items = new ArrayList<>();
 
     void addSpecification(AgreementSpecificationItem item) {
         items.add(item);
+    }
+
+    public List<AgreementSpecificationItem> getItems() {
+        return items;
     }
 
     @Override

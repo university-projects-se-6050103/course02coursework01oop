@@ -33,6 +33,10 @@ public class ContractDepartment {
         deliveryPlans.add(deliveryPlan);
     }
 
+    public List<DeliveryPlan> getDeliveryPlans() {
+        return deliveryPlans;
+    }
+
     // Singleton class holder
     public static class ContractDepartmentHolder {
         public static ContractDepartment HOLDER_INSTANCE = new ContractDepartment();

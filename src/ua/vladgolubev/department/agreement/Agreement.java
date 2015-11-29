@@ -83,6 +83,7 @@ public class Agreement implements Serializable {
             delivery = Delivery.newBuilder()
                     .setDestinationLocation(destination)
                     .setEstimatedDate(desiredDate)
+                    .setSpoiled(false)
                     .build();
             return this;
         }

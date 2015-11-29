@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class Delivery {
     private String destinationLocation;
     private LocalDate estimatedDate;
+    private boolean spoiled;
 
     private Delivery() { }
 
@@ -16,6 +17,10 @@ public class Delivery {
 
     public LocalDate getEstimatedDate() {
         return estimatedDate;
+    }
+
+    public boolean isSpoiled() {
+        return spoiled;
     }
 
     @Override
@@ -43,6 +48,11 @@ public class Delivery {
 
         public Builder setEstimatedDate(String date) {
             Delivery.this.estimatedDate = LocalDate.from(dateFormat.parse(date));
+            return this;
+        }
+
+        public Builder setSpoiled(boolean spoiled) {
+            Delivery.this.spoiled = spoiled;
             return this;
         }
 

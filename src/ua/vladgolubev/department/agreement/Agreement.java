@@ -49,6 +49,7 @@ public class Agreement implements Serializable {
                 ", number=" + number +
                 ", date=" + date +
                 ", specification=" + specification +
+                ", delivery=" + delivery +
                 '}';
     }
 

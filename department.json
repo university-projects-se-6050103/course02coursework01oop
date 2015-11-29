@@ -1,0 +1,134 @@
+{
+  "agreements": [
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "ТернопільБУД"
+      },
+      "number": 6681,
+      "date": {
+        "date": {
+          "year": 2015,
+          "month": 11,
+          "day": 29
+        },
+        "time": {
+          "hour": 13,
+          "minute": 34,
+          "second": 57,
+          "nano": 272000000
+        }
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Бетон",
+            "amount": 192.2,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "date": {
+                "year": 2015,
+                "month": 11,
+                "day": 29
+              },
+              "time": {
+                "hour": 13,
+                "minute": 34,
+                "second": 57,
+                "nano": 287000000
+              }
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 3429.0,
+            "unitOfMeasurement": "M",
+            "date": {
+              "date": {
+                "year": 2015,
+                "month": 11,
+                "day": 29
+              },
+              "time": {
+                "hour": 13,
+                "minute": 34,
+                "second": 57,
+                "nano": 287000000
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "destinationLocation": "Київ",
+      "agreement": {
+        "title": "Доставка будматеріалів",
+        "organization": {
+          "name": "ТернопільБУД"
+        },
+        "number": 6681,
+        "date": {
+          "date": {
+            "year": 2015,
+            "month": 11,
+            "day": 29
+          },
+          "time": {
+            "hour": 13,
+            "minute": 34,
+            "second": 57,
+            "nano": 272000000
+          }
+        },
+        "specification": {
+          "items": [
+            {
+              "name": "Бетон",
+              "amount": 192.2,
+              "unitOfMeasurement": "TON",
+              "date": {
+                "date": {
+                  "year": 2015,
+                  "month": 11,
+                  "day": 29
+                },
+                "time": {
+                  "hour": 13,
+                  "minute": 34,
+                  "second": 57,
+                  "nano": 287000000
+                }
+              }
+            },
+            {
+              "name": "Дротина",
+              "amount": 3429.0,
+              "unitOfMeasurement": "M",
+              "date": {
+                "date": {
+                  "year": 2015,
+                  "month": 11,
+                  "day": 29
+                },
+                "time": {
+                  "hour": 13,
+                  "minute": 34,
+                  "second": 57,
+                  "nano": 287000000
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "organizations": [
+    {
+      "name": "ТернопільБУД"
+    }
+  ]
+}

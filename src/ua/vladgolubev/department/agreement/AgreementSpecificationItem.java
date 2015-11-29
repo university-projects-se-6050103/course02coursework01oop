@@ -1,19 +1,20 @@
 package ua.vladgolubev.department.agreement;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class AgreementSpecificationItem implements Serializable {
     private String name;
     private double amount;
     private UnitOfMeasurement unitOfMeasurement;
-    private LocalDateTime date;
+    private LocalDate date;
 
     AgreementSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
         this.name = name;
         this.amount = amount;
         this.unitOfMeasurement = unitOfMeasurement;
-        this.date = LocalDateTime.now();
+        this.date = LocalDate.now();
     }
 
     public String getName() {
@@ -28,7 +29,7 @@ public class AgreementSpecificationItem implements Serializable {
         return unitOfMeasurement;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

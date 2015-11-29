@@ -16,15 +16,10 @@ public class Main {
                 .addOrganization("ТернопільБУД")
                 .addSpecificationItem("Бетон", 192.2, UnitOfMeasurement.TON)
                 .addSpecificationItem("Дротина", 3429.0, UnitOfMeasurement.M)
-                .build();
-
-        Delivery delivery = contractDepartment.defineDelivery()
-                .setDestinationLocation("Київ")
-                .setAgreement(agreement)
+                .addDelivery("Київ", "22.12.2015")
                 .build();
 
         contractDepartment.signAgreement(agreement);
-        contractDepartment.scheduleDelivery(delivery);
 
         System.out.println(contractDepartment);
 

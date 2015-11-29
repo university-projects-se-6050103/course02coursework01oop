@@ -1,14 +1,12 @@
 package ua.vladgolubev.department.delivery;
 
-import ua.vladgolubev.department.agreement.Agreement;
-
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Delivery implements Serializable {
     private String destinationLocation;
-    private Agreement agreement;
-    private LocalDateTime estimatedDate;
+    private LocalDate estimatedDate;
 
     private Delivery() { }
 
@@ -16,11 +14,8 @@ public class Delivery implements Serializable {
         return destinationLocation;
     }
 
-    public Agreement getAgreement() {
-        return agreement;
-    }
 
-    public LocalDateTime getEstimatedDate() {
+    public LocalDate getEstimatedDate() {
         return estimatedDate;
     }
 
@@ -37,7 +32,9 @@ public class Delivery implements Serializable {
     }
 
     public class Builder {
+        private DateTimeFormatter dateFormat;
         private Builder() {
+            this.dateFormat = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         }
 
         public Builder setDestinationLocation(String destinationLocation) {
@@ -45,8 +42,8 @@ public class Delivery implements Serializable {
             return this;
         }
 
-        public Builder setAgreement(Agreement agreement) {
-            Delivery.this.agreement = agreement;
+        public Builder setEstimatedDate(String date) {
+            Delivery.this.estimatedDate = LocalDate.from(dateFormat.parse(date));
             return this;
         }
 

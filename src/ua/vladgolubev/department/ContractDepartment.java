@@ -10,12 +10,10 @@ import java.util.List;
 
 public class ContractDepartment implements Serializable {
     private List<Agreement> agreements;
-    private List<Delivery> deliveries;
     private List<Organization> organizations;
 
     private ContractDepartment() {
         agreements = new ArrayList<Agreement>();
-        deliveries = new ArrayList<Delivery>();
         organizations = new ArrayList<Organization>();
     }
 
@@ -23,17 +21,9 @@ public class ContractDepartment implements Serializable {
         return Agreement.newBuilder();
     }
 
-    public Delivery.Builder defineDelivery() {
-        return Delivery.newBuilder();
-    }
-
     public void signAgreement(Agreement agreement) {
         agreements.add(agreement);
         organizations.add(agreement.getOrganization());
-    }
-
-    public void scheduleDelivery(Delivery delivery) {
-        deliveries.add(delivery);
     }
 
     // Singleton class holder
@@ -49,7 +39,6 @@ public class ContractDepartment implements Serializable {
     public String toString() {
         return "ContractDepartment{" +
                 "agreements=" + agreements +
-                ", deliveries=" + deliveries +
                 ", organizations=" + organizations +
                 '}';
     }

@@ -1,6 +1,10 @@
 package ua.vladgolubev.department.agreement;
 
+import ua.vladgolubev.department.ContractDepartment;
+import ua.vladgolubev.department.delivery.Delivery;
+
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Random;
 
@@ -8,8 +12,9 @@ public class Agreement implements Serializable {
     private String title;
     private Organization organization;
     private int number;
-    private LocalDateTime date;
+    private LocalDate date;
     private AgreementSpecification specification;
+    private Delivery delivery;
 
     private Agreement() {
     }
@@ -26,12 +31,16 @@ public class Agreement implements Serializable {
         return number;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
     public AgreementSpecification getSpecification() {
         return specification;
+    }
+
+    public Delivery getDelivery() {
+        return delivery;
     }
 
     @Override
@@ -50,9 +59,9 @@ public class Agreement implements Serializable {
     }
 
     public class Builder {
-        private Builder(){
+        private Builder() {
             Agreement.this.number = new Random().nextInt(10000);
-            Agreement.this.date = LocalDateTime.now();
+            Agreement.this.date = LocalDate.now();
             Agreement.this.specification = new AgreementSpecification();
         }
 
@@ -68,6 +77,14 @@ public class Agreement implements Serializable {
 
         public Builder addSpecificationItem(String name, double amount, UnitOfMeasurement unitOfMeasurement) {
             Agreement.this.specification.addSpecification(new AgreementSpecificationItem(name, amount, unitOfMeasurement));
+            return this;
+        }
+
+        public Builder addDelivery(String destination, String desiredDate) {
+            delivery = Delivery.newBuilder()
+                    .setDestinationLocation(destination)
+                    .setEstimatedDate(desiredDate)
+                    .build();
             return this;
         }
 

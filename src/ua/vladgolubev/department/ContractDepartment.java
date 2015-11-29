@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContractDepartment implements Serializable {
+public class ContractDepartment {
     private List<Agreement> agreements;
     private List<Organization> organizations;
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Delivery implements Serializable {
+public class Delivery {
     private String destinationLocation;
     private LocalDate estimatedDate;
 

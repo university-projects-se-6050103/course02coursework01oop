@@ -2,15 +2,19 @@ package ua.vladgolubev.department;
 
 import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.Organization;
+import ua.vladgolubev.department.delivery.Delivery;
+import ua.vladgolubev.department.delivery.DeliveryPlan;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ContractDepartment {
     private List<Agreement> agreements;
+    private List<DeliveryPlan> deliveryPlans;
 
     private ContractDepartment() {
         agreements = new ArrayList<>();
+        deliveryPlans = new ArrayList<>();
     }
 
     public Agreement.Builder defineAgreement() {
@@ -23,6 +27,10 @@ public class ContractDepartment {
 
     public List<Agreement> getAgreements() {
         return agreements;
+    }
+
+    public void addDeliveryPlan(DeliveryPlan deliveryPlan) {
+        deliveryPlans.add(deliveryPlan);
     }
 
     // Singleton class holder

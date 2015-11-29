@@ -8,11 +8,12 @@ public class DeliveryPlan {
     private List<Delivery> plannedDeliveries = new ArrayList<>();
     private LocalDate lastPossibleDate = LocalDate.MIN;
 
-    public void planDelivery(Delivery delivery) {
+    public DeliveryPlan planDelivery(Delivery delivery) {
         plannedDeliveries.add(delivery);
         if (delivery.getEstimatedDate().compareTo(lastPossibleDate) > 0) {
             lastPossibleDate = delivery.getEstimatedDate();
         }
+        return this;
     }
 
     public List<Delivery> getPlannedDeliveries() {

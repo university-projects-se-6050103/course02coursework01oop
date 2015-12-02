@@ -11,10 +11,12 @@ import java.util.List;
 public class ContractDepartment {
     private List<Agreement> agreements;
     private List<DeliveryPlan> deliveryPlans;
+    private List<Report> reports;
 
     private ContractDepartment() {
         agreements = new ArrayList<>();
         deliveryPlans = new ArrayList<>();
+        reports = new ArrayList<>();
     }
 
     public Agreement.Builder defineAgreement() {
@@ -35,6 +37,14 @@ public class ContractDepartment {
 
     public List<DeliveryPlan> getDeliveryPlans() {
         return deliveryPlans;
+    }
+
+    public List<Report> getReports() {
+        return reports;
+    }
+
+    public <T> void addReport(T report) {
+        this.reports.add(new Report().addReport(report));
     }
 
     // Singleton class holder

@@ -14,10 +14,12 @@ import static java.util.stream.Collectors.toMap;
 public class SpecificationsAnalysis {
     private static Map<String, Double> specificationSummary = new HashMap<>();
 
-    public static void printMostPopularMaterials() {
+    public static Map<String, Double> getMostPopularMaterials() {
         summarizeMaterialsData();
+        return specificationSummary;
+    }
 
-        System.out.println("Specifications Analysis. Most popular materials");
+    public static void print() {
         int i = 0;
         for (Map.Entry<String, Double> entry : specificationSummary.entrySet()) {
             if (i < 5) {

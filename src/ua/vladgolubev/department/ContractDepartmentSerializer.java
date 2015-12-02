@@ -10,7 +10,8 @@ import java.nio.file.Paths;
 
 public class ContractDepartmentSerializer {
     private static Gson gson;
-    private static Path defaultJsonPath = Paths.get("./department.json");
+    private static String defaultFilename = "department.json";
+    private static Path defaultJsonPath = Paths.get("./" + defaultFilename);
 
     static {
         gson = new GsonBuilder()
@@ -18,14 +19,17 @@ public class ContractDepartmentSerializer {
                 .create();
     }
 
-    public static void storeDepartmentInfo(ContractDepartment contractDepartment) {
+    public static String getDefaultFilename() {
+        return defaultFilename;
+    }
+
+    public static Path getDefaultJsonPath() {
+        return defaultJsonPath;
+    }
+
+    public static void storeDepartmentInfo(ContractDepartment contractDepartment) throws IOException {
         String json = gson.toJson(contractDepartment);
-        try {
-            Files.write(defaultJsonPath, json.getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("[ERROR]: Unable to write a file");
-        }
+        Files.write(defaultJsonPath, json.getBytes());
     }
 
     public static ContractDepartment loadDepartmentInfo() {

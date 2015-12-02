@@ -23,6 +23,10 @@ import static org.junit.Assert.fail;
 public class ContractDepartmentTest {
     private static final int defaultNumberOfAgreements = 10;
 
+    /**
+     * Generate random agreements fixtures to fill class with data
+     * @throws Exception
+     */
     @BeforeClass
     public static void setUp() throws Exception {
         ContractDepartment contractDepartment = ContractDepartment.getInstance();
@@ -67,6 +71,10 @@ public class ContractDepartmentTest {
         contractDepartment.addReport(SpecificationsAnalysis.getMostPopularMaterials());
     }
 
+    /**
+     * Number of generated agreements should be equal with desired generated number
+     * @throws Exception
+     */
     @Test
     public void testAgreementsGenerated() throws Exception {
         int generatedAgreementsCount = ContractDepartment.getInstance().getAgreements().size();
@@ -74,14 +82,23 @@ public class ContractDepartmentTest {
     }
 
     /**
-     * Exported .json file should exist in filesystem.
-     *
+     * Exporting should not throw exceptions
      * @throws Exception
      */
     @Test
-    public void testWritingToFile() throws Exception {
+    public void testExport() throws Exception {
+        ContractDepartment contractDepartmentInstance = ContractDepartment.getInstance();
+        ContractDepartmentSerializer.storeDepartmentInfo(contractDepartmentInstance);
+    }
+
+    /**
+     * Exported .json file should exist in filesystem.
+     * @throws Exception
+     */
+    @Test
+    public void testExportedFileIsWritten() throws Exception {
         ContractDepartmentSerializer.storeDepartmentInfo(ContractDepartment.getInstance());
-        if (!new File("department.json").exists()) {
+        if (!new File(ContractDepartmentSerializer.getDefaultJsonPath().toString()).exists()) {
             fail("Exported file not found.");
         }
     }

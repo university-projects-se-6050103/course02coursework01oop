@@ -1,5 +1,8 @@
 package ua.vladgolubev.department.agreement;
 
+/**
+ * Організація, що підписує договір з договірним відділом.
+ */
 public class Organization {
     private final String name;
 

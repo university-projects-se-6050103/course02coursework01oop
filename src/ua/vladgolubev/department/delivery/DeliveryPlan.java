@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * План поставки, що містить список поставок, які об’єднані однаковою датою.
+ */
 public class DeliveryPlan {
     private List<Delivery> plannedDeliveries = new ArrayList<>();
     private LocalDate lastPossibleDate = LocalDate.MIN;

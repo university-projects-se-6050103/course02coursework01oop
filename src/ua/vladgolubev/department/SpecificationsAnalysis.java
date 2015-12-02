@@ -11,6 +11,9 @@ import java.util.Map;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toMap;
 
+/**
+ * Консолідований аналіз специфікацій, що визначає найбільше популярні матеріали поставки.
+ */
 public class SpecificationsAnalysis {
     private static Map<String, Double> specificationSummary = new HashMap<>();
 

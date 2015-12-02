@@ -6,6 +6,9 @@ import ua.vladgolubev.department.delivery.DeliveryPlan;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Договірний відділ, що формує та містить усю інформацію про договори, плани поставок та звіти.
+ */
 public class ContractDepartment {
     private List<Agreement> agreements;
     private List<DeliveryPlan> deliveryPlans;

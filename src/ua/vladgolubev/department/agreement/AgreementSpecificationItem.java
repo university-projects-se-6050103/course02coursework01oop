@@ -2,6 +2,9 @@ package ua.vladgolubev.department.agreement;
 
 import java.time.LocalDate;
 
+/**
+ * Елемент специфікації, що містить інформацію про матеріал, його кількість та бажану дату поставки.
+ */
 public class AgreementSpecificationItem {
     private String name;
     private double amount;
@@ -40,4 +43,11 @@ public class AgreementSpecificationItem {
                 ", date=" + date +
                 '}';
     }
+}
+
+/**
+ * Одиниця виміру матеріалів поставки.
+ */
+enum UnitOfMeasurement {
+    KG, TON, M
 }

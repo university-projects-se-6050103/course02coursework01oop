@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Відстеження поставки, що показує які плани поставок були зірваними
+ */
 public final class DeliveryTracking {
     public static List<Delivery> getOverdueDeliveries(DeliveryPlan deliveryPlan) {
         return deliveryPlan.getPlannedDeliveries()

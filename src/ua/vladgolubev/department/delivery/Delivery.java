@@ -3,6 +3,9 @@ package ua.vladgolubev.department.delivery;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Документ поставки, що мість інформацію про місце призначення, дату поставки та її стан (зірвана).
+ */
 public class Delivery {
     private String destinationLocation;
     private LocalDate estimatedDate;

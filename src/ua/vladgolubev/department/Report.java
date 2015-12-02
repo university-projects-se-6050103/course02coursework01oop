@@ -3,6 +3,10 @@ package ua.vladgolubev.department;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Універсальний звіт, що може містити звітну інформацію.
+ * @param <T>
+ */
 public class Report<T> {
     private List<T> reportItems = new ArrayList<>();
 

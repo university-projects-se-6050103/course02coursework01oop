@@ -3,6 +3,9 @@ package ua.vladgolubev.department.agreement;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Специфікація договору, що містить матеріали, що мають буди поставленими за договором.
+ */
 public class AgreementSpecification {
     private List<AgreementSpecificationItem> items = new ArrayList<>();
 

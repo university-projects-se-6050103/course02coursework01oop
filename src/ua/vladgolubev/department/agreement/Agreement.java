@@ -5,6 +5,10 @@ import ua.vladgolubev.department.delivery.Delivery;
 import java.time.LocalDate;
 import java.util.Random;
 
+/**
+ * Договір, що підписується з організацією. Містить інформацію про назву договору, назву організації,
+ * числовий індентифікатор договору, дату укладання, специфікацію договору та залпановану поставку.
+ */
 public class Agreement {
     private String title;
     private Organization organization;

@@ -8,6 +8,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Експорт/імпорт даних договірного відділу до/з файлу.
+ */
 public final class ContractDepartmentSerializer {
     private static Gson gson;
     private static String defaultFilename = "department.json";

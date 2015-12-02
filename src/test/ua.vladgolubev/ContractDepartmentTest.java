@@ -2,11 +2,8 @@ package ua.vladgolubev;
 
 import org.jfairy.Fairy;
 import org.joda.time.DateTime;
-import org.junit.Before;
 import org.junit.Test;
 import ua.vladgolubev.department.ContractDepartment;
-import ua.vladgolubev.department.ContractDepartmentSerializer;
-import ua.vladgolubev.department.SpecificationsAnalysis;
 import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.UnitOfMeasurement;
 import ua.vladgolubev.department.delivery.DeliveryPlan;
@@ -19,14 +16,13 @@ import java.util.concurrent.ThreadLocalRandom;
 import static org.junit.Assert.assertTrue;
 
 public class ContractDepartmentTest {
-    private final int numberOfAgreements = 10;
-    private final RandomGenerator rg = new RandomGenerator();
+    private final int defaultNumberOfAgreements = 10;
 
-    @Before
-    public void setUp() throws Exception {
+    public ContractDepartmentTest() {
         ContractDepartment contractDepartment = ContractDepartment.getInstance();
 
-        for (int i = 0; i < numberOfAgreements && ContractDepartment.getInstance().getAgreements().size() < 10; i++) {
+        for (int i = 0; i < defaultNumberOfAgreements && ContractDepartment.getInstance().getAgreements().size() < 10; i++) {
+            RandomGenerator rg = new RandomGenerator();
             Agreement agreement = contractDepartment.defineAgreement()
                     .setTitle("Доставка будматеріалів")
                     .addOrganization(rg.getRandomOrganizationName())
@@ -51,18 +47,8 @@ public class ContractDepartmentTest {
 
     @Test
     public void testAgreementsGenerated() throws Exception {
-        assertTrue(ContractDepartment.getInstance().getAgreements().size() == numberOfAgreements);
-    }
-
-    @Test  // To delete
-    public void toStringShouldPrint() {
-        SpecificationsAnalysis.printMostPopularMaterials();
-        assertTrue(ContractDepartment.getInstance().toString().length() > 0);
-    }
-
-    @Test
-    public void testJsonSerialization() throws Exception {
-        ContractDepartmentSerializer.storeDepartmentInfo(ContractDepartment.getInstance());
+        int generatedAgreementsCount = ContractDepartment.getInstance().getAgreements().size();
+        assertTrue(generatedAgreementsCount == defaultNumberOfAgreements);
     }
 }
 

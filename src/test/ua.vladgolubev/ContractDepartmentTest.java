@@ -147,6 +147,23 @@ public class ContractDepartmentTest {
         assertTrue(outputContent.toString().length() > 0);
         outputContent.reset();
     }
+
+    /**
+     * Agreement methods should not throw exceptions
+     * @throws Exception
+     */
+    @Test
+    public void testAgreementGetters() throws Exception {
+        for (Agreement agreement : ContractDepartment.getInstance().getAgreements()) {
+            agreement.getTitle();
+            agreement.getOrganization();
+            agreement.getDelivery().getEstimatedDate();
+            agreement.getDelivery().getDestinationLocation();
+            agreement.getNumber();
+            agreement.getDate();
+            agreement.toString();
+        }
+    }
 }
 
 

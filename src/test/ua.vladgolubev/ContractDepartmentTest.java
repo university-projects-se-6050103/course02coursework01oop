@@ -137,6 +137,7 @@ public class ContractDepartmentTest {
                         .format(DateTimeFormatter.ofPattern("dd.MM.yyyy")),
                 testDate);
         assertEquals(deliveryPlan.getPlannedDeliveries().get(0).isSpoiled(), true);
+        deliveryPlan.toString();
         DeliveryTracking.getOverdueDeliveries(deliveryPlan);
     }
 
@@ -231,6 +232,16 @@ public class ContractDepartmentTest {
         assertNotNull(agreementSpecificationItem.getDate());
         assertNotNull(agreementSpecificationItem.getAmount());
         assertNotNull(agreementSpecificationItem.getUnitOfMeasurement());
+    }
+
+    @Test
+    public void testAgreementBuilder() throws Exception {
+        Agreement.newBuilder()
+                .setTitle("testTitle")
+                .addDelivery("testCityname", "31.12.2015")
+                .addOrganization("testOrganizationName")
+                .addSpecificationItem("testItemName", 123, UnitOfMeasurement.KG)
+                .build();
     }
 }
 

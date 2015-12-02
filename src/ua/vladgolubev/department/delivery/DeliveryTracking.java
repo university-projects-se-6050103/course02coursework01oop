@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DeliveryTracking {
+public final class DeliveryTracking {
     public static List<Delivery> getOverdueDeliveries(DeliveryPlan deliveryPlan) {
         return deliveryPlan.getPlannedDeliveries()
                 .stream()

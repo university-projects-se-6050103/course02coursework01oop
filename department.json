@@ -1199,6 +1199,222 @@
         "month": 7,
         "day": 1
       }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2012,
+            "month": 6,
+            "day": 16
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2019,
+            "month": 5,
+            "day": 24
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2019,
+        "month": 5,
+        "day": 24
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "Washington",
+          "estimatedDate": {
+            "year": 2010,
+            "month": 3,
+            "day": 13
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2011,
+            "month": 7,
+            "day": 1
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2011,
+        "month": 7,
+        "day": 1
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2012,
+            "month": 6,
+            "day": 16
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2019,
+            "month": 5,
+            "day": 24
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2019,
+        "month": 5,
+        "day": 24
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "Washington",
+          "estimatedDate": {
+            "year": 2010,
+            "month": 3,
+            "day": 13
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2011,
+            "month": 7,
+            "day": 1
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2011,
+        "month": 7,
+        "day": 1
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2012,
+            "month": 6,
+            "day": 16
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2019,
+            "month": 5,
+            "day": 24
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2019,
+        "month": 5,
+        "day": 24
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "Washington",
+          "estimatedDate": {
+            "year": 2010,
+            "month": 3,
+            "day": 13
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2011,
+            "month": 7,
+            "day": 1
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2011,
+        "month": 7,
+        "day": 1
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2012,
+            "month": 6,
+            "day": 16
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2019,
+            "month": 5,
+            "day": 24
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2019,
+        "month": 5,
+        "day": 24
+      }
+    },
+    {
+      "plannedDeliveries": [
+        {
+          "destinationLocation": "Washington",
+          "estimatedDate": {
+            "year": 2010,
+            "month": 3,
+            "day": 13
+          },
+          "spoiled": false
+        },
+        {
+          "destinationLocation": "New York",
+          "estimatedDate": {
+            "year": 2011,
+            "month": 7,
+            "day": 1
+          },
+          "spoiled": false
+        }
+      ],
+      "lastPossibleDate": {
+        "year": 2011,
+        "month": 7,
+        "day": 1
+      }
     }
   ],
   "reports": [
@@ -1212,6 +1428,58 @@
           "Бензин": 20746.344135941967,
           "Пісок": 19132.972649835236,
           "Електропровід": 11460.157958032283
+        }
+      ]
+    },
+    {
+      "reportItems": [
+        {
+          "Скло": 60294.65650845191,
+          "Бетон": 53671.529262691205,
+          "Метал": 53095.79983512682,
+          "Дротина": 46178.225927593136,
+          "Бензин": 41492.68827188393,
+          "Пісок": 38265.94529967047,
+          "Електропровід": 22920.315916064566
+        }
+      ]
+    },
+    {
+      "reportItems": [
+        {
+          "Скло": 60294.65650845191,
+          "Бетон": 53671.529262691205,
+          "Метал": 53095.79983512682,
+          "Дротина": 46178.225927593136,
+          "Бензин": 41492.68827188393,
+          "Пісок": 38265.94529967047,
+          "Електропровід": 22920.315916064566
+        }
+      ]
+    },
+    {
+      "reportItems": [
+        {
+          "Скло": 60294.65650845191,
+          "Бетон": 53671.529262691205,
+          "Метал": 53095.79983512682,
+          "Дротина": 46178.225927593136,
+          "Бензин": 41492.68827188393,
+          "Пісок": 38265.94529967047,
+          "Електропровід": 22920.315916064566
+        }
+      ]
+    },
+    {
+      "reportItems": [
+        {
+          "Скло": 60294.65650845191,
+          "Бетон": 53671.529262691205,
+          "Метал": 53095.79983512682,
+          "Дротина": 46178.225927593136,
+          "Бензин": 41492.68827188393,
+          "Пісок": 38265.94529967047,
+          "Електропровід": 22920.315916064566
         }
       ]
     },

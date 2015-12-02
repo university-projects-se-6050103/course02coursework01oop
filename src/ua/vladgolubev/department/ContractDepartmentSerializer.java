@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class ContractDepartmentSerializer {
+public final class ContractDepartmentSerializer {
     private static Gson gson;
     private static String defaultFilename = "department.json";
     private static Path defaultJsonPath = Paths.get("./" + defaultFilename);
@@ -17,6 +17,9 @@ public class ContractDepartmentSerializer {
         gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
+    }
+
+    private ContractDepartmentSerializer() {
     }
 
     public static String getDefaultFilename() {

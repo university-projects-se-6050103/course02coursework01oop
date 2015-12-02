@@ -3,154 +3,44 @@
     {
       "title": "Доставка будматеріалів",
       "organization": {
-        "name": "Ciklum"
-      },
-      "number": 7119,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Електропровід",
-            "amount": 8664.747978026984,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Бензин",
-            "amount": 4358.4552004112775,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Бензин",
-            "amount": 7908.821859457277,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2014,
-          "month": 11,
-          "day": 29
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
-        "name": "Ciklum"
-      },
-      "number": 1202,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Бетон",
-            "amount": 528.8925537712562,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Скло",
-            "amount": 1669.2904851776061,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Бетон",
-            "amount": 7741.530593002432,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2010,
-          "month": 1,
-          "day": 8
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
         "name": "SoftServe"
       },
-      "number": 9822,
+      "number": 6474,
       "date": {
         "year": 2015,
-        "month": 11,
-        "day": 29
+        "month": 12,
+        "day": 2
       },
       "specification": {
         "items": [
           {
-            "name": "Електропровід",
-            "amount": 2657.513814527054,
+            "name": "Бетон",
+            "amount": 1131.6577697707141,
             "unitOfMeasurement": "TON",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
-            "name": "Електропровід",
-            "amount": 1553.4435918801394,
+            "name": "Пісок",
+            "amount": 5591.273514883174,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
-            "name": "Бетон",
-            "amount": 7946.195421357993,
+            "name": "Дротина",
+            "amount": 897.415706807695,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           }
         ]
@@ -159,7 +49,337 @@
         "destinationLocation": "Washington",
         "estimatedDate": {
           "year": 2020,
-          "month": 1,
+          "month": 6,
+          "day": 1
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "Eleks"
+      },
+      "number": 908,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Метал",
+            "amount": 128.75336078728424,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Скло",
+            "amount": 4426.935744961533,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Бетон",
+            "amount": 5387.383997217289,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "Washington",
+        "estimatedDate": {
+          "year": 2017,
+          "month": 9,
+          "day": 4
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "Epam"
+      },
+      "number": 5153,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Електропровід",
+            "amount": 9231.018257063603,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Пісок",
+            "amount": 6072.781748560233,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Скло",
+            "amount": 7399.617142657748,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "New York",
+        "estimatedDate": {
+          "year": 2017,
+          "month": 6,
+          "day": 30
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "Eleks"
+      },
+      "number": 615,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Скло",
+            "amount": 6059.829656535859,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 3668.4417641497694,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 5330.429726760894,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "Washington",
+        "estimatedDate": {
+          "year": 2017,
+          "month": 9,
+          "day": 9
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "NetCracker"
+      },
+      "number": 4884,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Метал",
+            "amount": 8387.312009293553,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Електропровід",
+            "amount": 709.7350854298521,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 9052.036396742391,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "Washington",
+        "estimatedDate": {
+          "year": 2018,
+          "month": 11,
+          "day": 15
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "Eleks"
+      },
+      "number": 5700,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Метал",
+            "amount": 1611.0862419312903,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Електропровід",
+            "amount": 5846.037523673593,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Бензин",
+            "amount": 9046.175190208094,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "New York",
+        "estimatedDate": {
+          "year": 2017,
+          "month": 3,
+          "day": 20
+        },
+        "spoiled": false
+      }
+    },
+    {
+      "title": "Доставка будматеріалів",
+      "organization": {
+        "name": "Eleks"
+      },
+      "number": 8164,
+      "date": {
+        "year": 2015,
+        "month": 12,
+        "day": 2
+      },
+      "specification": {
+        "items": [
+          {
+            "name": "Метал",
+            "amount": 7213.326566807108,
+            "unitOfMeasurement": "TON",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 6439.536275544374,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Бензин",
+            "amount": 5148.9182383850975,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
+            }
+          }
+        ]
+      },
+      "delivery": {
+        "destinationLocation": "Washington",
+        "estimatedDate": {
+          "year": 2013,
+          "month": 8,
           "day": 26
         },
         "spoiled": false
@@ -170,272 +390,52 @@
       "organization": {
         "name": "JSSolutions"
       },
-      "number": 3407,
+      "number": 9683,
       "date": {
         "year": 2015,
-        "month": 11,
-        "day": 29
+        "month": 12,
+        "day": 2
       },
       "specification": {
         "items": [
           {
-            "name": "Метал",
-            "amount": 8626.78979162984,
+            "name": "Дротина",
+            "amount": 1374.709309969963,
             "unitOfMeasurement": "TON",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Скло",
-            "amount": 4793.350026405831,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
             "name": "Дротина",
-            "amount": 4811.104947788965,
+            "amount": 8081.965509299773,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
+            }
+          },
+          {
+            "name": "Дротина",
+            "amount": 3080.328785072838,
+            "unitOfMeasurement": "M",
+            "date": {
+              "year": 2015,
+              "month": 12,
+              "day": 2
             }
           }
         ]
       },
       "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2015,
-          "month": 3,
-          "day": 14
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
-        "name": "NetCracker"
-      },
-      "number": 2206,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Бетон",
-            "amount": 8064.2557899615,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Метал",
-            "amount": 1897.6130766258007,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Скло",
-            "amount": 2261.920219490934,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2017,
-          "month": 7,
-          "day": 12
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
-        "name": "NetCracker"
-      },
-      "number": 9651,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Скло",
-            "amount": 9004.79012002687,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Скло",
-            "amount": 5530.227677799601,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Пісок",
-            "amount": 6671.4014139220735,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
+        "destinationLocation": "Washington",
         "estimatedDate": {
           "year": 2014,
-          "month": 10,
-          "day": 20
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
-        "name": "Luxoft"
-      },
-      "number": 3848,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Бензин",
-            "amount": 6633.33528263502,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Метал",
-            "amount": 9070.760140712131,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Пісок",
-            "amount": 4222.3247920045915,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2016,
-          "month": 10,
-          "day": 3
-        },
-        "spoiled": false
-      }
-    },
-    {
-      "title": "Доставка будматеріалів",
-      "organization": {
-        "name": "Ciklum"
-      },
-      "number": 6998,
-      "date": {
-        "year": 2015,
-        "month": 11,
-        "day": 29
-      },
-      "specification": {
-        "items": [
-          {
-            "name": "Бензин",
-            "amount": 7779.770405188533,
-            "unitOfMeasurement": "TON",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Бетон",
-            "amount": 1951.5466367551737,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          },
-          {
-            "name": "Метал",
-            "amount": 5420.205168327758,
-            "unitOfMeasurement": "M",
-            "date": {
-              "year": 2015,
-              "month": 11,
-              "day": 29
-            }
-          }
-        ]
-      },
-      "delivery": {
-        "destinationLocation": "New York",
-        "estimatedDate": {
-          "year": 2019,
-          "month": 8,
-          "day": 24
+          "month": 12,
+          "day": 19
         },
         "spoiled": false
       }
@@ -445,42 +445,42 @@
       "organization": {
         "name": "GlobalLogic"
       },
-      "number": 1982,
+      "number": 1164,
       "date": {
         "year": 2015,
-        "month": 11,
-        "day": 29
+        "month": 12,
+        "day": 2
       },
       "specification": {
         "items": [
           {
-            "name": "Скло",
-            "amount": 6057.14625454241,
+            "name": "Бензин",
+            "amount": 7450.972100580005,
             "unitOfMeasurement": "TON",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
-            "name": "Дротина",
-            "amount": 7909.708373600696,
+            "name": "Скло",
+            "amount": 2542.147638849102,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
-            "name": "Бензин",
-            "amount": 8853.473356421653,
+            "name": "Пісок",
+            "amount": 8491.044463636055,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           }
         ]
@@ -488,9 +488,9 @@
       "delivery": {
         "destinationLocation": "New York",
         "estimatedDate": {
-          "year": 2018,
-          "month": 4,
-          "day": 26
+          "year": 2020,
+          "month": 6,
+          "day": 17
         },
         "spoiled": false
       }
@@ -498,44 +498,44 @@
     {
       "title": "Доставка будматеріалів",
       "organization": {
-        "name": "Epam"
+        "name": "Eleks"
       },
-      "number": 9089,
+      "number": 5705,
       "date": {
         "year": 2015,
-        "month": 11,
-        "day": 29
+        "month": 12,
+        "day": 2
       },
       "specification": {
         "items": [
           {
-            "name": "Бетон",
-            "amount": 3511.0414376953463,
+            "name": "Бензин",
+            "amount": 5059.808883160508,
             "unitOfMeasurement": "TON",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
             "name": "Бетон",
-            "amount": 7620.151776633603,
+            "amount": 8194.904151847453,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           },
           {
-            "name": "Бензин",
-            "amount": 6360.082427693977,
+            "name": "Дротина",
+            "amount": 526.8412296054354,
             "unitOfMeasurement": "M",
             "date": {
               "year": 2015,
-              "month": 11,
-              "day": 29
+              "month": 12,
+              "day": 2
             }
           }
         ]
@@ -543,9 +543,9 @@
       "delivery": {
         "destinationLocation": "New York",
         "estimatedDate": {
-          "year": 2018,
-          "month": 5,
-          "day": 21
+          "year": 2012,
+          "month": 4,
+          "day": 15
         },
         "spoiled": false
       }
@@ -555,55 +555,55 @@
     {
       "plannedDeliveries": [
         {
-          "destinationLocation": "Washington",
+          "destinationLocation": "New York",
           "estimatedDate": {
-            "year": 2020,
-            "month": 1,
-            "day": 26
+            "year": 2017,
+            "month": 6,
+            "day": 30
           },
           "spoiled": false
         },
         {
-          "destinationLocation": "New York",
+          "destinationLocation": "Washington",
           "estimatedDate": {
-            "year": 2017,
-            "month": 7,
-            "day": 12
+            "year": 2018,
+            "month": 11,
+            "day": 15
           },
           "spoiled": false
         }
       ],
       "lastPossibleDate": {
-        "year": 2020,
-        "month": 1,
-        "day": 26
+        "year": 2018,
+        "month": 11,
+        "day": 15
       }
     },
     {
       "plannedDeliveries": [
         {
-          "destinationLocation": "New York",
+          "destinationLocation": "Washington",
           "estimatedDate": {
-            "year": 2010,
-            "month": 1,
-            "day": 8
+            "year": 2017,
+            "month": 9,
+            "day": 4
           },
           "spoiled": false
         },
         {
-          "destinationLocation": "New York",
+          "destinationLocation": "Washington",
           "estimatedDate": {
-            "year": 2019,
-            "month": 8,
-            "day": 24
+            "year": 2014,
+            "month": 12,
+            "day": 19
           },
           "spoiled": false
         }
       ],
       "lastPossibleDate": {
-        "year": 2019,
-        "month": 8,
-        "day": 24
+        "year": 2017,
+        "month": 9,
+        "day": 4
       }
     }
   ]

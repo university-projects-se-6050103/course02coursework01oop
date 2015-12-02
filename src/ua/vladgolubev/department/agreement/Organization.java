@@ -3,7 +3,7 @@ package ua.vladgolubev.department.agreement;
 public class Organization {
     private final String name;
 
-    Organization(String name) {
+    public Organization(String name) {
         this.name = name;
     }
 

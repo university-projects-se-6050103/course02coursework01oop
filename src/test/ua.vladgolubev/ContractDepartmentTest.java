@@ -9,9 +9,12 @@ import ua.vladgolubev.department.ContractDepartment;
 import ua.vladgolubev.department.ContractDepartmentSerializer;
 import ua.vladgolubev.department.SpecificationsAnalysis;
 import ua.vladgolubev.department.agreement.Agreement;
+import ua.vladgolubev.department.agreement.AgreementSpecificationItem;
+import ua.vladgolubev.department.agreement.Organization;
 import ua.vladgolubev.department.agreement.UnitOfMeasurement;
 import ua.vladgolubev.department.delivery.Delivery;
 import ua.vladgolubev.department.delivery.DeliveryPlan;
+import ua.vladgolubev.department.delivery.DeliveryTracking;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -42,52 +45,6 @@ public class ContractDepartmentTest {
     @AfterClass
     public static void tearDown() throws Exception {
         System.setOut(null);
-    }
-
-    /**
-     * Fill ContractDepartment with random data
-     */
-    private static void setUpFromScratch() {
-        ContractDepartment contractDepartment = ContractDepartment.getInstance();
-
-        for (int i = 0; i < defaultNumberOfAgreements && ContractDepartment.getInstance().getAgreements().size() < 10; i++) {
-            RandomGenerator rg = new RandomGenerator();
-            Agreement agreement = contractDepartment.defineAgreement()
-                    .setTitle("Доставка будматеріалів")
-                    .addOrganization(rg.organizationName())
-                    .addSpecificationItem(
-                            rg.specificationName(),
-                            rg.doubleNumber(),
-                            UnitOfMeasurement.TON
-                    )
-                    .addSpecificationItem(
-                            rg.specificationName(),
-                            rg.doubleNumber(),
-                            UnitOfMeasurement.M
-                    )
-                    .addSpecificationItem(
-                            rg.specificationName(),
-                            rg.doubleNumber(),
-                            UnitOfMeasurement.M
-                    )
-                    .addDelivery(
-                            rg.city(),
-                            rg.stringDate()
-                    )
-                    .build();
-
-            contractDepartment.signAgreement(agreement);
-        }
-
-        contractDepartment.addDeliveryPlan(
-                new DeliveryPlan()
-                        .planDelivery(contractDepartment.getAgreements().get(2).getDelivery())
-                        .planDelivery(contractDepartment.getAgreements().get(4).getDelivery()));
-        contractDepartment.addDeliveryPlan(
-                new DeliveryPlan()
-                        .planDelivery(contractDepartment.getAgreements().get(1).getDelivery())
-                        .planDelivery(contractDepartment.getAgreements().get(7).getDelivery()));
-        contractDepartment.addReport(SpecificationsAnalysis.getMostPopularMaterials());
     }
 
     /**
@@ -180,6 +137,100 @@ public class ContractDepartmentTest {
                         .format(DateTimeFormatter.ofPattern("dd.MM.yyyy")),
                 testDate);
         assertEquals(deliveryPlan.getPlannedDeliveries().get(0).isSpoiled(), true);
+        DeliveryTracking.getOverdueDeliveries(deliveryPlan);
+    }
+
+    /**
+     * Fill ContractDepartment with random data
+     */
+    @Test
+    public void testSetUpFromScratch() {
+        ContractDepartment contractDepartment = ContractDepartment.getInstance();
+
+        for (int i = 0; i < defaultNumberOfAgreements && ContractDepartment.getInstance().getAgreements().size() < 10; i++) {
+            RandomGenerator rg = new RandomGenerator();
+            Agreement agreement = contractDepartment.defineAgreement()
+                    .setTitle("Доставка будматеріалів")
+                    .addOrganization(rg.organizationName())
+                    .addSpecificationItem(
+                            rg.specificationName(),
+                            rg.doubleNumber(),
+                            UnitOfMeasurement.TON
+                    )
+                    .addSpecificationItem(
+                            rg.specificationName(),
+                            rg.doubleNumber(),
+                            UnitOfMeasurement.M
+                    )
+                    .addSpecificationItem(
+                            rg.specificationName(),
+                            rg.doubleNumber(),
+                            UnitOfMeasurement.M
+                    )
+                    .addDelivery(
+                            rg.city(),
+                            rg.stringDate()
+                    )
+                    .build();
+
+            contractDepartment.signAgreement(agreement);
+        }
+
+        contractDepartment.addDeliveryPlan(
+                new DeliveryPlan()
+                        .planDelivery(contractDepartment.getAgreements().get(2).getDelivery())
+                        .planDelivery(contractDepartment.getAgreements().get(4).getDelivery()));
+        contractDepartment.addDeliveryPlan(
+                new DeliveryPlan()
+                        .planDelivery(contractDepartment.getAgreements().get(1).getDelivery())
+                        .planDelivery(contractDepartment.getAgreements().get(7).getDelivery()));
+        contractDepartment.addReport(SpecificationsAnalysis.getMostPopularMaterials());
+    }
+
+    @Test
+    public void testGetAgreements() throws Exception {
+        ContractDepartment.getInstance().getAgreements();
+    }
+
+    @Test
+    public void testGetDeliveryPlans() throws Exception {
+        ContractDepartment.getInstance().getDeliveryPlans();
+    }
+
+    @Test
+    public void testGetReports() throws Exception {
+        ContractDepartment.getInstance().getReports();
+    }
+
+    @Test
+    public void testToString() throws Exception {
+        ContractDepartment.getInstance().toString();
+    }
+
+    @Test
+    public void testMain() throws Exception {
+        Main.main(new String[]{"test"});
+    }
+
+    @Test
+    public void testOrganizationGetName() throws Exception {
+        Organization testOrganization = new Organization("test");
+        testOrganization.getName();
+    }
+
+    @Test
+    public void testAgreementSpecificationItem() throws Exception {
+        AgreementSpecificationItem agreementSpecificationItem =
+                ContractDepartment.getInstance()
+                        .getAgreements()
+                        .get(0)
+                        .getSpecification()
+                        .getItems()
+                        .get(0);
+        assertNotNull(agreementSpecificationItem.getName());
+        assertNotNull(agreementSpecificationItem.getDate());
+        assertNotNull(agreementSpecificationItem.getAmount());
+        assertNotNull(agreementSpecificationItem.getUnitOfMeasurement());
     }
 }
 

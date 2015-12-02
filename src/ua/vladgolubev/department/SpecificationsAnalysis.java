@@ -20,6 +20,7 @@ public class SpecificationsAnalysis {
     }
 
     public static void print() {
+        summarizeMaterialsData();
         int i = 0;
         for (Map.Entry<String, Double> entry : specificationSummary.entrySet()) {
             if (i < 5) {

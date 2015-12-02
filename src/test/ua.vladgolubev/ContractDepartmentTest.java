@@ -10,6 +10,7 @@ import ua.vladgolubev.department.ContractDepartmentSerializer;
 import ua.vladgolubev.department.SpecificationsAnalysis;
 import ua.vladgolubev.department.agreement.Agreement;
 import ua.vladgolubev.department.agreement.UnitOfMeasurement;
+import ua.vladgolubev.department.delivery.Delivery;
 import ua.vladgolubev.department.delivery.DeliveryPlan;
 
 import java.io.ByteArrayOutputStream;
@@ -20,8 +21,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class ContractDepartmentTest {
     private static final int defaultNumberOfAgreements = 10;
@@ -150,6 +150,7 @@ public class ContractDepartmentTest {
 
     /**
      * Agreement methods should not throw exceptions
+     *
      * @throws Exception
      */
     @Test
@@ -163,6 +164,22 @@ public class ContractDepartmentTest {
             agreement.getDate();
             agreement.toString();
         }
+    }
+
+    @Test
+    public void testDeliveryPlan() throws Exception {
+        String testDate = "22.12.2015";
+        DeliveryPlan deliveryPlan = new DeliveryPlan().planDelivery(
+                Delivery.newBuilder()
+                        .setDestinationLocation("Cityname")
+                        .setEstimatedDate(testDate)
+                        .setSpoiled(true)
+                        .build());
+        assertEquals(deliveryPlan.getPlannedDeliveries().size(), 1);
+        assertEquals(deliveryPlan.getLastPossibleDate()
+                        .format(DateTimeFormatter.ofPattern("dd.MM.yyyy")),
+                testDate);
+        assertEquals(deliveryPlan.getPlannedDeliveries().get(0).isSpoiled(), true);
     }
 }
 

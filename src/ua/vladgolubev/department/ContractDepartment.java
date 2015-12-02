@@ -1,8 +1,6 @@
 package ua.vladgolubev.department;
 
 import ua.vladgolubev.department.agreement.Agreement;
-import ua.vladgolubev.department.agreement.Organization;
-import ua.vladgolubev.department.delivery.Delivery;
 import ua.vladgolubev.department.delivery.DeliveryPlan;
 
 import java.util.ArrayList;

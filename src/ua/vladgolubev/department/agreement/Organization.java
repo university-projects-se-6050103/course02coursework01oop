@@ -1,8 +1,6 @@
 package ua.vladgolubev.department.agreement;
 
-import java.io.Serializable;
-
-public class Organization implements Serializable {
+public class Organization {
     private final String name;
 
     Organization(String name) {

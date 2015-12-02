@@ -1,10 +1,9 @@
 package ua.vladgolubev.department.agreement;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AgreementSpecification implements Serializable {
+public class AgreementSpecification {
     private List<AgreementSpecificationItem> items = new ArrayList<>();
 
     void addSpecification(AgreementSpecificationItem item) {

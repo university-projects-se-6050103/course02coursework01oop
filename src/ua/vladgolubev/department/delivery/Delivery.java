@@ -8,7 +8,8 @@ public class Delivery {
     private LocalDate estimatedDate;
     private boolean spoiled;
 
-    private Delivery() { }
+    private Delivery() {
+    }
 
     public String getDestinationLocation() {
         return destinationLocation;
@@ -37,6 +38,7 @@ public class Delivery {
 
     public class Builder {
         private DateTimeFormatter dateFormat;
+
         private Builder() {
             this.dateFormat = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         }

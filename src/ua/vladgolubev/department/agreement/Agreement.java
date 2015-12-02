@@ -2,11 +2,10 @@ package ua.vladgolubev.department.agreement;
 
 import ua.vladgolubev.department.delivery.Delivery;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Random;
 
-public class Agreement implements Serializable {
+public class Agreement {
     private String title;
     private Organization organization;
     private int number;

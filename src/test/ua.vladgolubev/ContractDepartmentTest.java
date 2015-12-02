@@ -2,6 +2,7 @@ package ua.vladgolubev;
 
 import org.jfairy.Fairy;
 import org.joda.time.DateTime;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import ua.vladgolubev.department.ContractDepartment;
 import ua.vladgolubev.department.ContractDepartmentSerializer;
@@ -20,9 +21,10 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class ContractDepartmentTest {
-    private final int defaultNumberOfAgreements = 10;
+    private static final int defaultNumberOfAgreements = 10;
 
-    public ContractDepartmentTest() {
+    @BeforeClass
+    public static void setUp() throws Exception {
         ContractDepartment contractDepartment = ContractDepartment.getInstance();
 
         for (int i = 0; i < defaultNumberOfAgreements && ContractDepartment.getInstance().getAgreements().size() < 10; i++) {
